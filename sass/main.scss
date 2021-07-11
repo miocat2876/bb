@@ -1,0 +1,226 @@
+@import 'base';
+
+//@include
+//&
+
+.wrapper{
+    .header-wrap{
+        width: 100vw;
+        background-color: grey;
+        @include fx($h:$CT,$v:$CT);
+            .board{
+                @include fx();
+                li{
+                    padding: 16px;
+                }
+            }
+            .logo{
+                padding: 16px 32px;
+                img{
+                    width: 2em;
+                    height: 2em;
+                }
+            }
+            @include fx($h:$CT,$v:$CT);
+            .member{
+                @include fx();
+                li{
+                    padding: 16px;
+                }
+            }
+        .search-wrap{
+            margin-left: 32px;
+            .search{
+                @include fx();
+            }
+        }
+    }
+
+
+    .main-wrap{
+        margin: 0 auto;
+        max-width: $MD;
+        width: 100%;
+        .slider-wrap{
+            @include fx();
+            margin: 32px 0;
+            
+            img{
+                width: 75%;
+                height: 40vh;
+            }
+            .slider-desc{
+                width: 25%;
+                display: inline-block;
+                li{
+                    border: 1px solid black;
+                    height: 10vh;
+                }
+            }
+            @include MD{
+                img{
+                    width: 100%;
+                    height: 40vh;
+                }
+                .slider-desc{
+                    width: 100%;
+                }
+            }
+        }
+        .content-wrap{
+            @include fx();
+            section{
+                width: calc(50% - 32px);
+                height: 40vh;
+                margin-bottom: 32px;
+                &:nth-child(2n){
+                    margin-left: 64px;
+                }
+                h3{
+                    color: dodgerblue;
+                    display: inline-block;
+                    cursor: pointer;
+                    margin-bottom: 16px;
+                    &:hover{
+                        color: blue;
+                        text-decoration: underline dodgerblue;
+                    }
+
+                }
+
+                @include MD{
+                    width: 100%;
+                    &:nth-child(2n){
+                        margin-left: 0px;
+                    }
+                }
+
+                table{
+                    @include border;
+                    width: 100%;
+                    tbody{
+                        tr{
+                            td{
+                                &:nth-child(2){
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+                }
+                .twitter-wrap{
+                    height: calc(40vh - 19px);
+                    overflow-y: scroll;
+                }
+            }
+            .instagram2{
+                margin-left: 64px;
+                @include MD{
+                    margin-left: 0;
+                    margin-top: 32px;
+                }
+            }
+            
+            .instagram-wrap{
+                @include fx($h:$SB,$w:nowrap);
+                width: calc(50% - 32px);
+                @include MD{
+                    width: 100%;
+                }
+                div{
+                    width: calc(50% - 8px);
+                    @include MD{
+                        width: 100%
+                    }
+                    .image-wrap{
+                        @include fx();
+                        width: 100%;
+                        height: 90%;
+
+                        li{
+                            position: relative;
+                            cursor: pointer;
+                            padding: 4px;
+                            width: calc(33.3%);
+                            height: calc(33.3%);
+                            &:nth-child(3n){
+                                padding-right: 0;
+                            }
+                            img{
+                                transition: opacity 0.3s;
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .image-desc{
+                                @include fx($v:$CT);
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                opacity: 0;
+                                transition: opacity 0.7s;
+                                width: 100%;
+                                height: 100%;
+                                .count{
+                                    color: wheat;
+                                }
+
+                            }
+                            &:hover .image-desc{
+                                background-color: black;
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-wrap{
+        margin-top: 100px;
+        background-color: gray;
+        width: 100vw;
+        height: 100px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
