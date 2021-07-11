@@ -196,6 +196,15 @@ a:link, a:visited, a:hover, a:active {
 .wrapper .main-wrap .slider-wrap .slider-desc li {
   border: 1px solid black;
   height: 10vh;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.wrapper .main-wrap .slider-wrap .slider-desc li:hover {
+  color: white;
+  background-color: black;
+  opacity: 0.3;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {
@@ -261,6 +270,10 @@ a:link, a:visited, a:hover, a:active {
 .wrapper .main-wrap .content-wrap section table {
   border: 1px solid black;
   width: 100%;
+}
+
+.wrapper .main-wrap .content-wrap section table tbody tr td {
+  padding: 8px 0;
 }
 
 .wrapper .main-wrap .content-wrap section table tbody tr td:nth-child(2) {
