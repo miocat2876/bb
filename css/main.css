@@ -166,7 +166,7 @@ a:link, a:visited, a:hover, a:active {
 
 @media screen and (max-width: 992px) {
   .wrapper .main-wrap {
-    padding: 0 16px;
+    padding: 0 32px;
   }
 }
 
@@ -243,7 +243,6 @@ a:link, a:visited, a:hover, a:active {
 
 .wrapper .main-wrap .content-wrap section {
   width: calc(50% - 32px);
-  height: 40vh;
   margin-bottom: 32px;
 }
 
@@ -287,8 +286,12 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .wrapper .main-wrap .content-wrap section .twitter-wrap {
-  height: calc(40vh - 19px);
+  height: calc(40vh - 35px);
   overflow-y: scroll;
+}
+
+.wrapper .main-wrap .content-wrap section .youtube-wrap {
+  height: calc(40vh - 35px);
 }
 
 .wrapper .main-wrap .content-wrap .instagram2 {
@@ -303,6 +306,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .wrapper .main-wrap .content-wrap .instagram-wrap {
+  margin-top: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,7 +416,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .wrapper .footer-wrap {
-  margin-top: 100px;
+  margin-top: 48px;
   background-color: gray;
   width: 100vw;
   height: 100px;

@@ -39,7 +39,7 @@
 
     .main-wrap{
         @include MD{
-            padding: 0 16px;
+            padding: 0 32px;
         }
         margin: 0 auto;
         max-width: $MD;
@@ -81,7 +81,6 @@
             @include fx();
             section{
                 width: calc(50% - 32px);
-                height: 40vh;
                 margin-bottom: 32px;
                 &:nth-child(2n){
                     margin-left: 64px;
@@ -120,8 +119,11 @@
                     }
                 }
                 .twitter-wrap{
-                    height: calc(40vh - 19px);
+                    height: calc(40vh - 35px);
                     overflow-y: scroll;
+                }
+                .youtube-wrap{
+                    height: calc(40vh - 35px);
                 }
             }
             .instagram2{
@@ -133,6 +135,7 @@
             }
             
             .instagram-wrap{
+                margin-top: 16px;
                 @include fx($h:$SB,$w:nowrap);
                 width: calc(50% - 32px);
                 @include MD{
@@ -188,7 +191,7 @@
     }
 
     .footer-wrap{
-        margin-top: 100px;
+        margin-top: 48px;
         background-color: gray;
         width: 100vw;
         height: 100px;
