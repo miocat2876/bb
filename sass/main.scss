@@ -38,6 +38,9 @@
 
 
     .main-wrap{
+        @include MD{
+            padding: 0 16px;
+        }
         margin: 0 auto;
         max-width: $MD;
         width: 100%;

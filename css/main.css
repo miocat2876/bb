@@ -164,6 +164,12 @@ a:link, a:visited, a:hover, a:active {
   width: 100%;
 }
 
+@media screen and (max-width: 992px) {
+  .wrapper .main-wrap {
+    padding: 0 16px;
+  }
+}
+
 .wrapper .main-wrap .slider-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
