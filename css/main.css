@@ -369,10 +369,6 @@ a:link, a:visited, a:hover, a:active {
   height: calc(33.3%);
 }
 
-.wrapper .main-wrap .content-wrap .instagram-wrap div .image-wrap li:nth-child(3n) {
-  padding-right: 0;
-}
-
 .wrapper .main-wrap .content-wrap .instagram-wrap div .image-wrap li img {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;

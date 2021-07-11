@@ -157,9 +157,7 @@
                             padding: 4px;
                             width: calc(33.3%);
                             height: calc(33.3%);
-                            &:nth-child(3n){
-                                padding-right: 0;
-                            }
+
                             img{
                                 transition: opacity 0.3s;
                                 width: 100%;
